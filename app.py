@@ -13,15 +13,12 @@ def index():
 def index1():
 
     if request.method == 'POST':
-        req = request.form
 
-        name = req["InputName"]
+        name = [letter for letter in request.form.get("InputName")]
 
         print(name)
 
-        return redirect(request.url)
-
-    return render_template('index1.html')
+    return render_template("index1.html", name=name)
 
 
 if __name__ == '__main__':
