@@ -6,10 +6,6 @@
           transform: translate(50px, 50px) rotate(45deg);
 }
 
-td.rotate{
-    padding-top: 25px ;
-}
-
 #sub-page{
     padding-bottom: 50px;
 }
