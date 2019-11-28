@@ -1,6 +1,15 @@
+.table-header-rotated td.rotate {
+    font-size: 30px;
+    letter-spacing: 1px;
+  -webkit-transform: translate(50px, 50px) rotate(45deg);
+      -ms-transform: translate(50px, 50px) rotate(45deg);
+          transform: translate(50px, 50px) rotate(45deg);
+}
 
-.table-header-rotated td.rotate > div {
-  -webkit-transform: translate(25px, 51px) rotate(45deg);
-      -ms-transform: translate(25px, 51px) rotate(45deg);
-          transform: translate(25px, 51px) rotate(45deg);
+td.rotate{
+    padding-top: 25px ;
+}
+
+#sub-page{
+    padding-bottom: 50px;
 }
