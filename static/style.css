@@ -1,0 +1,6 @@
+
+.table-header-rotated td.rotate > div {
+  -webkit-transform: translate(25px, 51px) rotate(45deg);
+      -ms-transform: translate(25px, 51px) rotate(45deg);
+          transform: translate(25px, 51px) rotate(45deg);
+}

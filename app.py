@@ -14,7 +14,7 @@ def index1():
 
     if request.method == 'POST':
 
-        name = [letter for letter in request.form.get("InputName")]
+        name = request.form.get('InputName')
 
         print(name)
 

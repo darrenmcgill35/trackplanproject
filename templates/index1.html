@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css" type="text/css"/>
     <title>Trackplan Project</title>
 </head>
 <body>
     <h3 class="text-center">Submissions Page</h3>
         <div class="container">
-            <div class="row">
-                {% for letter in name %}
-                <ul>
-                    <li class="list-group-item">{{ letter }}</li>
-                {% endfor %}
-                </ul>
-            </div>
+            {% for name in name %}
+                <table class="table-header-rotated">
+                        <thead>
+                            <tr>
+                                    <td class="rotate">
+                                        <div><span>{{ name }}</span></div>
+                                    </td>
+                            </tr>
+                        </thead>
+                </table>
+            {% endfor %}
         </div>
 
 
@@ -23,3 +28,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
