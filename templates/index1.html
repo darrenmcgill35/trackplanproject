@@ -9,17 +9,17 @@
 <body>
     <h3 class="text-center" id="sub-page">Submissions Page</h3>
         <div class="container">
-                <table class="table-header-rotated">
+         {% for letter in name %}
+                <table>
                         <thead>
                             <tr>
-                                <td class="rotate">
-                                    {% for name in name %}
-                                       <span>{{ name }}</span>
-                                    {% endfor %}
+                                <td>
+                                    {{ letter }}
                                 </td>
                             </tr>
                         </thead>
                 </table>
+            {% endfor %}
         </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
